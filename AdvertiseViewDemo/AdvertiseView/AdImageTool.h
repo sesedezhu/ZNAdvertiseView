@@ -17,7 +17,7 @@
 /**
  *  初始化广告页面
  */
-+ (void)getAdvertisingImage;
++ (void)getAdvertisingImage:(NSString *)imageUrl;
 
 /**
  *  下载新图片
