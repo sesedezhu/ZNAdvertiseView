@@ -21,7 +21,7 @@
     self.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToAd) name:@"pushtoad" object:nil];//广告页点击事件
-    [AdImageTool getAdvertisingImage];//判断广告是否更新
+    [AdImageTool getAdvertisingImage:nil];//判断广告是否更新
 }
 
 - (void)pushToAd {
