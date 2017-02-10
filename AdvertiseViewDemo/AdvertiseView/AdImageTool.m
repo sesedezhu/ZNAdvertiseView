@@ -23,11 +23,15 @@
 /**
  *  初始化广告页面
  */
-+ (void)getAdvertisingImage
++ (void)getAdvertisingImage:(NSString *)imageUrl
 {
-    NSString *imageUrl = @"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg";
+    if (imageUrl == nil) {
+        imageUrl = @"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg";
+    }
+    
         // 获取图片名
         NSArray *stringArr = [imageUrl componentsSeparatedByString:@"/"];
+        // 获取最后一组数组
         NSString *imageName = stringArr.lastObject;
         
         // 拼接沙盒路径
